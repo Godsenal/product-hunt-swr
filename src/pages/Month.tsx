@@ -27,7 +27,18 @@ const Month = () => {
     return <div>에러 발생!</div>;
   }
   if (!data) {
-    return <Loading />;
+    return (
+      <div
+        style={{
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
+        <Loading />
+      </div>
+    );
   }
   return (
     <>
