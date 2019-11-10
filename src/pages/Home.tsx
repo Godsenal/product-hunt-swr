@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import useSWR, { useSWRPages } from "swr";
 import qs from "query-string";
+import { ReactComponent as Loading } from "assets/loading.svg";
 import { ProductHuntApi } from "constants/api";
 import PostList from "components/PostList";
 import { Post } from "models/Post";
@@ -10,7 +11,8 @@ const CYear = CDate.getFullYear();
 const CMonth = CDate.getMonth() + 1;
 const DefaultQuery = {
   sort_by: "votes_count",
-  order: "desc"
+  order: "desc",
+  per_page: 10
 };
 
 const Home: React.FC = () => {
@@ -84,8 +86,8 @@ const Home: React.FC = () => {
       <h1>Month hunt</h1>
       {pages}
       {!isReachingEnd && (
-        <div ref={hitEl} style={{ height: 60 }}>
-          {isLoadingMore && "loading..."}
+        <div ref={hitEl} style={{ height: 60, textAlign: "center" }}>
+          {isLoadingMore && <Loading width={100} />}
         </div>
       )}
     </div>

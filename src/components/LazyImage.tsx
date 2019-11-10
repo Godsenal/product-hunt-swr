@@ -1,4 +1,4 @@
-import React, { HTMLProps, useRef, useEffect, useState, memo } from "react";
+import React, { HTMLProps, useRef, useEffect, memo } from "react";
 
 type Props = HTMLProps<HTMLImageElement>;
 

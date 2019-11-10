@@ -3,7 +3,7 @@ const fetcher = (info: RequestInfo, option: RequestInit = {}) =>
     ...option,
     headers: {
       ...option.headers,
-      Authorization: `Bearer ${process.env.PRODUCT_HUNT_TOKEN}`
+      Authorization: `Bearer ${process.env.REACT_APP_PRODUCT_HUNT_TOKEN}`
     }
   }).then(r => r.json());
 

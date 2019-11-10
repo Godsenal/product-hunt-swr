@@ -1,0 +1,36 @@
+.postItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.isFirstItem {
+  color: #fefefe;
+  background-color: #1b2838;
+}
+
+.postThumbnail {
+  padding-left: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.postInfo {
+  flex: 1;
+  padding-left: 10px;
+}
+.postInfo h3 {
+  margin: 0;
+}
+.postInfo a {
+  color: inherit;
+}
+.postInfo p {
+  font-size: 13px;
+}
+
+.postCount {
+  font-size: 32px;
+}
