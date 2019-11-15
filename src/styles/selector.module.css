@@ -1,0 +1,34 @@
+.button {
+  width: 100px;
+  padding: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.container {
+  position: absolute;
+  top: 40;
+  left: 0;
+  width: 320px;
+  z-index: 1;
+  text-align: right;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+}
+
+.month {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.select {
+  margin-bottom: 10x;
+}

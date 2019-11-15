@@ -82,7 +82,6 @@ const Home: React.FC = () => {
   }, [loadMore, isLoadingMore]);
   return (
     <div>
-      <h1>Month hunt</h1>
       {pages}
       {!isReachingEnd && (
         <div ref={hitEl} style={{ height: 60, textAlign: "center" }}>
