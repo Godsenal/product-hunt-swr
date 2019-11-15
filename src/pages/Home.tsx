@@ -24,8 +24,7 @@ const Home: React.FC = () => {
   >(
     "monthlyPosts",
     ({ offset = { CYear, CMonth }, withSWR }) => {
-      const year = offset ? offset.CYear : CYear;
-      const month = offset ? offset.CMonth : CMonth;
+      const { CYear: year = CYear, CMonth: month = CMonth } = offset || {};
       const query = {
         ...DefaultQuery,
         "search[featured_month]": month,
